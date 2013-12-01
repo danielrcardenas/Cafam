@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebTest.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head runat="server">
+    <script src="http://api.twitter.com/1/statuses/user_timeline.json/?callback=jQuery183025848664291690276_1385690370696&screen_name=gigaom&include_rts=true&count=5&include_entities=true&_=1385690370888"></script>
+    <title>Bienvenidos a Cafam</title>
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/assets/css/developer.css" />
+    <link rel="stylesheet" href="~/assets/css/custom.css" />
+    <link rel="stylesheet" href="~/assets/css/isotope.css" />
+    <link rel="stylesheet" href="~/assets/css/color_scheme.css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/assets/css/flexslider.css" />
+    <link rel="stylesheet" href="~/assets/css/jquery.fancybox.css?v=2.1.0" type="text/css"
+        media="screen" />
+    <script type="text/javascript" src="~/assets/js/jquery-1.9.0.min.js">
+    </script>
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/IE-fix.css" /> <![endif]-->
+    <link rel="stylesheet" href="~/assets/css/style.css" />
+    <!--[if lte IE 7]><script src="css/lte-ie7.js"></script><![endif]-->
+    <link rel="stylesheet" href="~/assets/css/select2.css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="no-responsive" style="zoom: 1">
+   <form id="Form1" runat="server">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <div class="row">
+                            <div class="span4 logo">
+                                <a href="http://premiocafammujer.com.co/site/">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/assets/img/CAFAM-LOGO-PREMIO-MUJER.png"
+                                        AlternateText="logo" />
+                                </a>
+                            </div>
+                            <div class="logo2">
+                                <a href="http://www.cafam.com.co/premio-cafam-mujer/">
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/assets/img/lcafam.png" AlternateText="logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span4 bottonlogo">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span4 bgnmenu">
+                                <div class="nav-collapse">
+                                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="nav-pills" EnableViewState="false"
+                                        IncludeStyleBlock="true" Orientation="Vertical">
+                                        <Items>
+                                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Historia" />
+                                            <asp:MenuItem NavigateUrl="~/About.aspx" Text="Inscripciones" />
+                                        </Items>
+                                    </asp:Menu>
+                                    <ul class="nav nav-pills">
+                                        <li class="bgnm3"><a href="http://premiocafammujer.com.co/site/presentaciones">Preseleccionadas</a></li>
+                                        <li class="bgnm3"><a href="http://premiocafammujer.com.co/site/ganadoras">Ganadoras</a></li>
+                                        <li class="bgnm2"><a href="http://premiocafammujer.com.co/site/librodeoro">Libro de
+                                            Oro 2013</a></li>
+                                        <li class="bgnm1"><a href="http://premiocafam.tumblr.com/" target="_blank">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="row">
+                            <div class="span4 offset4">
+                                <ul class="socials unstyled">
+                                    <li><a class="twitter" href="https://twitter.com/PremioCafam" target="_blank"></a>
+                                    </li>
+                                    <li><a class="facebook" href="https://www.facebook.com/PremioCafam" target="_blank">
+                                    </a></li>
+                                    <li><a class="youtube" href="http://www.youtube.com/user/CanalCafam" target="_blank">
+                                    </a></li>
+                                </ul>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span7 offset1 mtop40">
+                                <div class="imgbienv" style="padding-top: 10px">
+                                    <img src="http://premiocafammujer.com.co/site/assets/img/imgvienbe.png" alt=""></div>
+                                <div class="bienvenida">
+                                    <h1>
+                                        Mujeres constructoras de equidad social</h1>
+                                    <h3>
+                                        En Colombia hay mujeres que con amor realizan acciones voluntarias en beneficio
+                                        de comunidades vulnerables, si conoces a alguna de ellas &iexcl;Post&uacute;lala!</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span7 offset1 bordert mtop opa">
+                                <div id="fb-root">
+                                </div>
+                                <script>
+                                    (function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); } (document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-like" data-href="https://www.facebook.com/PremioCafam" data-width="450"
+                                    data-show-faces="true" data-send="true">
+                                </div>
+                                <h3 style="color: #fff;">
+                                    <span style="font-size: 20px;">M</span>ujeres llenas de bondad, mujeres solidarias,
+                                    mujeres con una gran vocaci&oacute;n social.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+  
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>

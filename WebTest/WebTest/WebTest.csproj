@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DEF7D3C-E623-446B-9057-B1212E9340E8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebTest</RootNamespace>
+    <AssemblyName>WebTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="assets\css\backup2\bootstrap.css" />
+    <Content Include="assets\css\backup2\bootstrap.min.css" />
+    <Content Include="assets\css\backup2\_notes\dwsync.xml" />
+    <Content Include="assets\css\backup\bootstrap.css" />
+    <Content Include="assets\css\backup\bootstrap.min.css" />
+    <Content Include="assets\css\backup\_notes\dwsync.xml" />
+    <Content Include="assets\css\bootstrap copia.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\chosen-sprite%402x.png" />
+    <Content Include="assets\css\chosen-sprite.png" />
+    <Content Include="assets\css\chosen.css" />
+    <Content Include="assets\css\color_scheme.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\developer.css" />
+    <Content Include="assets\css\fancy-style.css" />
+    <Content Include="assets\css\flexslider.css" />
+    <Content Include="assets\css\font-awesome-ie7.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\IE-fix.css" />
+    <Content Include="assets\css\isotope.css" />
+    <Content Include="assets\css\jquery.fancybox-1.3.4.css" />
+    <Content Include="assets\css\jquery.fancybox.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\rs-plugin\assets\arrowleft.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrowright.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrow_large_left.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrow_large_right.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrow_left.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrow_left2.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrow_right.png" />
+    <Content Include="assets\css\rs-plugin\assets\arrow_right2.png" />
+    <Content Include="assets\css\rs-plugin\assets\black50.png" />
+    <Content Include="assets\css\rs-plugin\assets\bullets.png" />
+    <Content Include="assets\css\rs-plugin\assets\bullets2.png" />
+    <Content Include="assets\css\rs-plugin\assets\grain.png" />
+    <Content Include="assets\css\rs-plugin\assets\navigdots.png" />
+    <Content Include="assets\css\rs-plugin\assets\navigdots_bgtile.png" />
+    <Content Include="assets\css\rs-plugin\assets\shadow1.png" />
+    <Content Include="assets\css\rs-plugin\assets\shadow2.png" />
+    <Content Include="assets\css\rs-plugin\assets\shadow3.png" />
+    <Content Include="assets\css\rs-plugin\assets\timer.png" />
+    <Content Include="assets\css\rs-plugin\assets\timerdot.png" />
+    <Content Include="assets\css\rs-plugin\assets\white50.png" />
+    <Content Include="assets\css\rs-plugin\assets\_notes\dwsync.xml" />
+    <Content Include="assets\css\rs-plugin\css\settings.css" />
+    <Content Include="assets\css\rs-plugin\css\_notes\dwsync.xml" />
+    <Content Include="assets\css\rs-plugin\images\decor_inside.png" />
+    <Content Include="assets\css\rs-plugin\images\decor_inside_white.png" />
+    <Content Include="assets\css\rs-plugin\images\decor_testimonial.png" />
+    <Content Include="assets\css\rs-plugin\images\gradient\g30.png" />
+    <Content Include="assets\css\rs-plugin\images\gradient\g40.png" />
+    <Content Include="assets\css\rs-plugin\images\gradient\_notes\dwsync.xml" />
+    <Content Include="assets\css\rs-plugin\images\_notes\dwsync.xml" />
+    <Content Include="assets\css\rs-plugin\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="assets\css\rs-plugin\js\jquery.themepunch.revolution.js" />
+    <Content Include="assets\css\rs-plugin\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="assets\css\rs-plugin\js\_notes\dwsync.xml" />
+    <Content Include="assets\css\rs-responsive.css" />
+    <Content Include="assets\css\select2.css" />
+    <Content Include="assets\css\_notes\dwsync.xml" />
+    <Content Include="assets\img\220_1_hover.png" />
+    <Content Include="assets\img\220_2_hover.png" />
+    <Content Include="assets\img\220_3_hover.png" />
+    <Content Include="assets\img\220_arrow_2_hover.png" />
+    <Content Include="assets\img\220_arrow_hover.png" />
+    <Content Include="assets\img\220_tall_arrow_hover.png" />
+    <Content Include="assets\img\460_2_hover.png" />
+    <Content Include="assets\img\460_arrow_2_hover.png" />
+    <Content Include="assets\img\460_arrow_hover.png" />
+    <Content Include="assets\img\460_hover.png" />
+    <Content Include="assets\img\about-us.jpg" />
+    <Content Include="assets\img\alert_stick_bg.png" />
+    <Content Include="assets\img\arrow_left.gif" />
+    <Content Include="assets\img\attention_sticker_sidebar.png" />
+    <Content Include="assets\img\attention_sticker_small.png" />
+    <Content Include="assets\img\attention_stick_bg.png" />
+    <Content Include="assets\img\background.jpg" />
+    <Content Include="assets\img\baloon.gif" />
+    <Content Include="assets\img\Banner1.png" />
+    <Content Include="assets\img\Banner2.png" />
+    <Content Include="assets\img\Banner3.png" />
+    <Content Include="assets\img\Banner4.png" />
+    <Content Include="assets\img\bgn.jpg" />
+    <Content Include="assets\img\bgn.png" />
+    <Content Include="assets\img\blank.gif" />
+    <Content Include="assets\img\block_post_img1.jpg" />
+    <Content Include="assets\img\block_post_img2.jpg" />
+    <Content Include="assets\img\block_post_img3.jpg" />
+    <Content Include="assets\img\block_post_img4.jpg" />
+    <Content Include="assets\img\blog-widget01.jpg" />
+    <Content Include="assets\img\blog-widget02.jpg" />
+    <Content Include="assets\img\blog-widget03.jpg" />
+    <Content Include="assets\img\blog-widget04.jpg" />
+    <Content Include="assets\img\blog-widget05.jpg" />
+    <Content Include="assets\img\blog-widget06.jpg" />
+    <Content Include="assets\img\blog-widget07.jpg" />
+    <Content Include="assets\img\blog-widget08.jpg" />
+    <Content Include="assets\img\blog-widget09.jpg" />
+    <Content Include="assets\img\blog-widget10.jpg" />
+    <Content Include="assets\img\blog-widget11.jpg" />
+    <Content Include="assets\img\blog-widget12.jpg" />
+    <Content Include="assets\img\blog-widget13.jpg" />
+    <Content Include="assets\img\blog-widget14.jpg" />
+    <Content Include="assets\img\blog01.jpg" />
+    <Content Include="assets\img\blog02.jpg" />
+    <Content Include="assets\img\blog03.jpg" />
+    <Content Include="assets\img\blog04.jpg" />
+    <Content Include="assets\img\blog05.jpg" />
+    <Content Include="assets\img\both_arrows.png" />
+    <Content Include="assets\img\bottom_block_bg.png" />
+    <Content Include="assets\img\breadcrumb_icon.png" />
+    <Content Include="assets\img\btnlike.png" />
+    <Content Include="assets\img\CAFAM-LOGO-PREMIO-MUJER.png" />
+    <Content Include="assets\img\client1.jpg" />
+    <Content Include="assets\img\client2.jpg" />
+    <Content Include="assets\img\client3.jpg" />
+    <Content Include="assets\img\client4.jpg" />
+    <Content Include="assets\img\client5.jpg" />
+    <Content Include="assets\img\client6.jpg" />
+    <Content Include="assets\img\collapse_btn.png" />
+    <Content Include="assets\img\comment_thumb.jpg" />
+    <Content Include="assets\img\destacado1.jpg" />
+    <Content Include="assets\img\destacado2.jpg" />
+    <Content Include="assets\img\destacado3.jpg" />
+    <Content Include="assets\img\destacado4.jpg" />
+    <Content Include="assets\img\direction.png" />
+    <Content Include="assets\img\equaliser.png" />
+    <Content Include="assets\img\fancybox_loading.gif" />
+    <Content Include="assets\img\fancybox_overlay.png" />
+    <Content Include="assets\img\fancybox_sprite.png" />
+    <Content Include="assets\img\figures.png" />
+    <Content Include="assets\img\follow.jpg" />
+    <Content Include="assets\img\follow.png" />
+    <Content Include="assets\img\fondo-logo.png" />
+    <Content Include="assets\img\footer_bg.jpg" />
+    <Content Include="assets\img\gal_1.jpg" />
+    <Content Include="assets\img\gal_2.jpg" />
+    <Content Include="assets\img\gal_3.jpg" />
+    <Content Include="assets\img\gal_4.jpg" />
+    <Content Include="assets\img\gal_5.jpg" />
+    <Content Include="assets\img\gal_6.jpg" />
+    <Content Include="assets\img\gal_7.jpg" />
+    <Content Include="assets\img\gal_hover.png" />
+    <Content Include="assets\img\gears.png" />
+    <Content Include="assets\img\girl.jpg" />
+    <Content Include="assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\img\grey_logo.png" />
+    <Content Include="assets\img\home_icon.png" />
+    <Content Include="assets\img\icono.png" />
+    <Content Include="assets\img\im.jpg" />
+    <Content Include="assets\img\imagen.png" />
+    <Content Include="assets\img\img-thumb01.jpg" />
+    <Content Include="assets\img\img-thumb02.jpg" />
+    <Content Include="assets\img\img-thumb03.jpg" />
+    <Content Include="assets\img\img-thumb04.jpg" />
+    <Content Include="assets\img\img-thumb05.jpg" />
+    <Content Include="assets\img\img-thumb06.jpg" />
+    <Content Include="assets\img\img01.jpg" />
+    <Content Include="assets\img\img02.jpg" />
+    <Content Include="assets\img\img03.jpg" />
+    <Content Include="assets\img\img04.jpg" />
+    <Content Include="assets\img\img05.jpg" />
+    <Content Include="assets\img\img06.jpg" />
+    <Content Include="assets\img\img07.jpg" />
+    <Content Include="assets\img\img08.jpg" />
+    <Content Include="assets\img\imgvienbe.png" />
+    <Content Include="assets\img\info_stick_bg.png" />
+    <Content Include="assets\img\item_220-160_01.jpg" />
+    <Content Include="assets\img\item_220-160_02.jpg" />
+    <Content Include="assets\img\item_220-160_03.jpg" />
+    <Content Include="assets\img\item_220-160_04.jpg" />
+    <Content Include="assets\img\item_220-160_05.jpg" />
+    <Content Include="assets\img\item_220-160_06.jpg" />
+    <Content Include="assets\img\item_220-160_07.jpg" />
+    <Content Include="assets\img\item_220-160_08.jpg" />
+    <Content Include="assets\img\item_460-160_01.jpg" />
+    <Content Include="assets\img\item_460-160_02.jpg" />
+    <Content Include="assets\img\item_460-160_03.jpg" />
+    <Content Include="assets\img\item_460-340_01.jpg" />
+    <Content Include="assets\img\item_460-340_02.jpg" />
+    <Content Include="assets\img\item_460-340_03.jpg" />
+    <Content Include="assets\img\lcafam.png" />
+    <Content Include="assets\img\left_nav_bullets.png" />
+    <Content Include="assets\img\linea.png" />
+    <Content Include="assets\img\lineafooter.png" />
+    <Content Include="assets\img\lineamenu.png" />
+    <Content Include="assets\img\logo-footer.png" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\member1.jpg" />
+    <Content Include="assets\img\member1_large.jpg" />
+    <Content Include="assets\img\member2.jpg" />
+    <Content Include="assets\img\member2_large.jpg" />
+    <Content Include="assets\img\member3.jpg" />
+    <Content Include="assets\img\member3_large.jpg" />
+    <Content Include="assets\img\member4.jpg" />
+    <Content Include="assets\img\member4_large.jpg" />
+    <Content Include="assets\img\menu-back.png" />
+    <Content Include="assets\img\menu-mascara.png" />
+    <Content Include="assets\img\menu1bg.png" />
+    <Content Include="assets\img\menu2bg.png" />
+    <Content Include="assets\img\menu_icons.png" />
+    <Content Include="assets\img\nosotros.jpg" />
+    <Content Include="assets\img\nosotros.png" />
+    <Content Include="assets\img\note_stick_bg.png" />
+    <Content Include="assets\img\philosophy.jpg" />
+    <Content Include="assets\img\portfolio_toggles.png" />
+    <Content Include="assets\img\post-inner-img.jpg" />
+    <Content Include="assets\img\post-inner-img2.jpg" />
+    <Content Include="assets\img\price_check.gif" />
+    <Content Include="assets\img\product_1.jpg" />
+    <Content Include="assets\img\product_2.jpg" />
+    <Content Include="assets\img\product_3.jpg" />
+    <Content Include="assets\img\product_4.jpg" />
+    <Content Include="assets\img\quote.png" />
+    <Content Include="assets\img\quotes.png" />
+    <Content Include="assets\img\redes.png" />
+    <Content Include="assets\img\release_icon.png" />
+    <Content Include="assets\img\ruler.png" />
+    <Content Include="assets\img\sample-img-140x140.jpg" />
+    <Content Include="assets\img\select2.png" />
+    <Content Include="assets\img\select2x2.png" />
+    <Content Include="assets\img\selectnav.png" />
+    <Content Include="assets\img\slide4_info_bg.png" />
+    <Content Include="assets\img\slider01.png" />
+    <Content Include="assets\img\slider02.png" />
+    <Content Include="assets\img\slider03.png" />
+    <Content Include="assets\img\slider04.png" />
+    <Content Include="assets\img\slider07.png" />
+    <Content Include="assets\img\slider_arrows.png" />
+    <Content Include="assets\img\slide_info_bg.png" />
+    <Content Include="assets\img\slide_stick01.png" />
+    <Content Include="assets\img\slide_stick02.png" />
+    <Content Include="assets\img\slide_stick03.png" />
+    <Content Include="assets\img\slide_stick04.png" />
+    <Content Include="assets\img\slide_stick05.png" />
+    <Content Include="assets\img\slide_stick06.png" />
+    <Content Include="assets\img\smbrabanner.png" />
+    <Content Include="assets\img\socials_icons.png" />
+    <Content Include="assets\img\sombra.footer.png" />
+    <Content Include="assets\img\sticker_sidebar_blue.png" />
+    <Content Include="assets\img\sticker_sidebar_green.png" />
+    <Content Include="assets\img\sticker_sidebar_red.png" />
+    <Content Include="assets\img\sticker_sidebar_white.png" />
+    <Content Include="assets\img\sticker_sidebar_yellow.png" />
+    <Content Include="assets\img\sticker_small_blue.png" />
+    <Content Include="assets\img\sticker_small_green.png" />
+    <Content Include="assets\img\sticker_small_red.png" />
+    <Content Include="assets\img\sticker_small_white.png" />
+    <Content Include="assets\img\sticker_small_yellow.png" />
+    <Content Include="assets\img\sticky-notes-banner.png" />
+    <Content Include="assets\img\success_stick_bg.png" />
+    <Content Include="assets\img\switch.png" />
+    <Content Include="assets\img\testimonials_block_bg.gif" />
+    <Content Include="assets\img\tweets_dummy.jpg" />
+    <Content Include="assets\img\tw_arrows.png" />
+    <Content Include="assets\img\tw_arrow_down.png" />
+    <Content Include="assets\img\tw_arrow_up.png" />
+    <Content Include="assets\img\warning-icons.png" />
+    <Content Include="assets\img\_notes\dwsync.xml" />
+    <Content Include="assets\js\backup\bootstrap.js" />
+    <Content Include="assets\js\backup\_notes\dwsync.xml" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\chosen.jquery.js" />
+    <Content Include="assets\js\chosen.jquery.min.js" />
+    <Content Include="assets\js\chosen.proto.js" />
+    <Content Include="assets\js\chosen.proto.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\custom_OLD.js" />
+    <Content Include="assets\js\funtion.js" />
+    <Content Include="assets\js\jquery-1.8.3.js" />
+    <Content Include="assets\js\jquery-1.9.0.min.js" />
+    <Content Include="assets\js\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="assets\js\jquery.fancybox.pack.js" />
+    <Content Include="assets\js\jquery.flexslider-min.js" />
+    <Content Include="assets\js\jquery.isotope.js" />
+    <Content Include="assets\js\mail_validation.js" />
+    <Content Include="assets\js\revolution.custom.js" />
+    <Content Include="assets\js\select2.js" />
+    <Content Include="assets\js\_notes\dwsync.xml" />
+    <Content Include="Historia.aspx" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="Inscipciones.aspx" />
+    <Content Include="Preseleccionadas.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Historia.aspx.cs">
+      <DependentUpon>Historia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historia.aspx.designer.cs">
+      <DependentUpon>Historia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inscipciones.aspx.cs">
+      <DependentUpon>Inscipciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inscipciones.aspx.designer.cs">
+      <DependentUpon>Inscipciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preseleccionadas.aspx.cs">
+      <DependentUpon>Preseleccionadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preseleccionadas.aspx.designer.cs">
+      <DependentUpon>Preseleccionadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1043</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
